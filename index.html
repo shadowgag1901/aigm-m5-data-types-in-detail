@@ -1,51 +1,48 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Data Types</title>
-</head>
+<head><title>Data Types</title></head>
 <body>
 
-    <h1>Data Types in Detail</h1>
+<h1>Data Types</h1>
 
-    <h2>1. Primitive Types</h2>
+<h2>String</h2>
+<p id="s1"></p>
 
-    <h3>String</h3>
-    <p>Text inside quotes.</p>
-    <pre>let name = "Rahul";
-let city = 'Mumbai';</pre>
+<h2>Number</h2>
+<p id="s2"></p>
 
-    <h3>Number</h3>
-    <p>Integers or decimals.</p>
-    <pre>let age = 21;
-let price = 99.50;</pre>
+<h2>Boolean</h2>
+<p id="s3"></p>
 
-    <h3>Boolean</h3>
-    <p>Only <b>true</b> or <b>false</b>.</p>
-    <pre>let passed = true;
-let failed = false;</pre>
+<h2>Array</h2>
+<p id="s4"></p>
 
-    <h2>2. Composite Types</h2>
+<h2>Object</h2>
+<p id="s5"></p>
 
-    <h3>Array</h3>
-    <p>Ordered list, index starts at 0.</p>
-    <pre>let fruits = ["Apple", "Banana", "Mango"];
-fruits[0];  // Apple</pre>
+<h2>Null & Undefined</h2>
+<p id="s6"></p>
 
-    <h3>Object</h3>
-    <p>Key-value pairs.</p>
-    <pre>let student = { name: "Priya", age: 20 };
-student.name;  // Priya</pre>
+<script>
+let name = "Rahul";
+document.getElementById("s1").innerText = typeof name + ": " + name;
 
-    <h2>3. Special Types</h2>
+let age = 21;
+document.getElementById("s2").innerText = typeof age + ": " + age;
 
-    <h3>Null</h3>
-    <p>Intentional empty value.</p>
-    <pre>let x = null;</pre>
+let passed = true;
+document.getElementById("s3").innerText = typeof passed + ": " + passed;
 
-    <h3>Undefined</h3>
-    <p>Declared but not assigned.</p>
-    <pre>let y;
-// y is undefined</pre>
+let fruits = ["Apple", "Banana", "Mango"];
+document.getElementById("s4").innerText = typeof fruits + ": " + fruits.join(", ");
+
+let student = { name: "Priya", age: 20 };
+document.getElementById("s5").innerText = typeof student + ": " + student.name + ", " + student.age;
+
+let x = null;
+let y;
+document.getElementById("s6").innerText = "null: " + x + " | undefined: " + y;
+</script>
 
 </body>
 </html>
